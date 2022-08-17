@@ -21,11 +21,12 @@ formEl.addEventListener("submit", ()=>{
     const userAnswer = +inputEl.value;
     if (userAnswer === answer){
         score++;
+        updateLocalStorage();
     } else{
         score--;
+        updateLocalStorage();
     }
-    console.log(score);
-})
+});
 
 function updateLocalStorage(){
     localStorage.setItem("score", JSON.stringify(score));
