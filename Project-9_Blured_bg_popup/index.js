@@ -11,5 +11,5 @@ btnEl.addEventListener("click", ()=> {
 
 closeIconEl.addEventListener("click", ()=>{
     containerEl.classList.remove("active");
-    popupContainerEl.classList.add("avtive");
+    popupContainerEl.classList.add("active");
 });
